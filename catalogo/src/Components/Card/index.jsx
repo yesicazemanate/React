@@ -17,6 +17,8 @@ const addProductsToCart = (event, productData)  => {
     context.setCartProducts([...context.cartProducts , productData])
     console.log(context.cartProducts)
     context.openCheckoutSideMenu()
+
+  
     context.closeProductDetail()
 }
 

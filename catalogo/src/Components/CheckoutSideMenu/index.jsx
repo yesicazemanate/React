@@ -1,3 +1,6 @@
+
+
+
 import { useContext } from 'react'
 import { CartContext } from "../../Context";
 import './styles.css'
@@ -10,6 +13,7 @@ const CheckoutSideMenu = () => {
     const handleDelete = (id) => {
         const filteredProducts = context.cartProducts.filter(product => product.id != id )
         context.setCartProducts(filteredProducts)
+        
     }
     
     return (
@@ -28,7 +32,7 @@ const CheckoutSideMenu = () => {
                         title = {product.title}
                         imageUrl = {product.images}
                         price = {product.price}
-                        handleDelete = {handleDelete}
+                        handleDelete={handleDelete}
                     />
                 ) )
             }
