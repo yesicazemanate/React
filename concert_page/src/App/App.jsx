@@ -1,11 +1,15 @@
 import './style.css'
-
+import Navbar from '../components/navbar/index.jsx'
+import Layout from '../components/Layout/index.jsx'
 function App() {
-  <>
-  <h1>HOLA MUNDO</h1>
-  </>
-   
+  return (
+    < >
+      <Navbar />
+      <Layout />
 
+    </>
+   
+  )
 }
 
 export default App
