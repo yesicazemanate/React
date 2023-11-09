@@ -1,12 +1,12 @@
 import './style.css'
+//import { useRoutes, BrowserRoutes } from 'react-router-dom'
 import Navbar from '../components/navbar/index.jsx'
-import Layout from '../components/Layout/index.jsx'
+import   Carousel from '../components/Layout/index.jsx'
 function App() {
   return (
     < >
       <Navbar />
-      <Layout />
-
+      <Carousel/>
     </>
    
   )
